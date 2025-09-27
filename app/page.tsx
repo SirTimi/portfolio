@@ -6,7 +6,7 @@ import Portfolio from '../components/Portfolio'
 import Testimonials from '../components/Testimonials'
 import CTA from '../components/CTA'
 import Contact from '../components/Contact'
-
+import BlogTeaser from '../components/BlogTeaser'
 export default function Home() {
   return (
     <div>
@@ -15,7 +15,8 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
-      <CTA />
+      <BlogTeaser/>
+      <CTA/>
       <Contact />
 
     </div>
