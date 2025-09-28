@@ -9,8 +9,8 @@ import Contact from '../components/Contact'
 import BlogTeaser from '../components/BlogTeaser'
 
 export const metadata = {
-  title: "Home",
-  description: "Portfolio, services, and selected work.",
+  title: "SirTimi - Web & AI Systems Engineer",
+  description: "Building Websites, Systems, Ai tools and Systems that solve your business problems",
   alternates: { canonical: "/" },
 };
 
@@ -18,7 +18,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Timi",
-  url: "https://<your-domain>",
+  url: "https://sirtimithdev.vercel.app",
   sameAs: [
     "https://x.com/@SirTimitheDev",
     "https://www.linkedin.com/in/timilehin-toba-972318326/",
