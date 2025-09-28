@@ -3,9 +3,11 @@ import Link from "next/link";
 import { getAllPosts } from "../../lib/posts";
 
 export const metadata = {
-  title: "Blog & Insights — Timi",
-  description: "Articles, insights, and build logs on web, systems, and growth.",
+  title: "Blog & Insights",
+  description: "Short build logs and lessons on systems, web, and growth.",
+  alternates: { canonical: "/blog" },
 };
+
 
 export default function BlogPage() {
   const posts = getAllPosts();

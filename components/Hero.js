@@ -58,9 +58,9 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.9 }}
         className="flex gap-6 text-2xl"
       >
-        <a href="#" className="hover:text-gold transition"><FaLinkedin /></a>
-        <a href="x.com/@SirTimitheDev" className="hover:text-gold transition"><FaTwitter /></a>
-        <a href="#" className="hover:text-gold transition"><FaInstagram /></a>
+        <a href="https://www.linkedin.com/in/timilehin-toba-972318326/" className="hover:text-gold transition"><FaLinkedin /></a>
+        <a href="https://x.com/@SirTimitheDev" className="hover:text-gold transition"><FaTwitter /></a>
+        <a href="https://www.instagram.com/sirtimiisthedev/" className="hover:text-gold transition"><FaInstagram /></a>
       </motion.div>
 
     </section>

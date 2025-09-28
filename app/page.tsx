@@ -7,8 +7,30 @@ import Testimonials from '../components/Testimonials'
 import CTA from '../components/CTA'
 import Contact from '../components/Contact'
 import BlogTeaser from '../components/BlogTeaser'
-export default function Home() {
+
+export const metadata = {
+  title: "Home",
+  description: "Portfolio, services, and selected work.",
+  alternates: { canonical: "/" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Timi",
+  url: "https://<your-domain>",
+  sameAs: [
+    "https://x.com/@SirTimitheDev",
+    "https://www.linkedin.com/in/timilehin-toba-972318326/",
+    "mailto:outreach.sirtimithedev@gmail.com",
+  ],
+  jobTitle: "Web & AI Systems Engineer",
+};
+
+export default function HomePage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div>
       <NavBar />
       <Hero />
@@ -20,5 +42,7 @@ export default function Home() {
       <Contact />
 
     </div>
+    </>
   )
 }
+

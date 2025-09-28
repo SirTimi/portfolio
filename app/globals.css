@@ -6,3 +6,11 @@
   color: #FFD700; /* Base gold */
   text-shadow: 0 0 8px #FFD700, 0 0 16px #FFD700; /* Subtle glow */
 }
+
+.font-display {
+  font-family: var(--font-playfair);
+}
+
+.font-body {
+  font-family: var(--font-inter);
+}

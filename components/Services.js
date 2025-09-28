@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaRobot, FaLaptopCode, FaChartLine } from 'react-icons/fa';
+import { FaRobot, FaLaptopCode, FaChartLine, FaBatteryFull } from 'react-icons/fa';
 
 const services = [
   {
@@ -19,6 +19,11 @@ const services = [
     icon: <FaChartLine className="text-gold text-4xl mb-4" />,
     title: "AI-Driven & Non AI-Driven Tools",
     description: "Turn data into actionable insights with intelligent dashboards and analytics tools."
+  },
+  {
+    icon: <FaBatteryFull className="text-gold text-4xl mb-4" />,
+    title: "AI & Web Driven Systems",
+    description: "Building AI & Web systems, independently and together you help you level up"
   }
 ];
 

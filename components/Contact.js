@@ -52,7 +52,7 @@ export default function Contact() {
           <ul className="space-y-3">
             <li>
               <span className="text-gold font-medium">Email:</span>{" "}
-              <a href="mailto:youremail@example.com" className="hover:underline">
+              <a href="mailto:outreach.sirtimithedev@gmail.com" className="hover:underline">
                 outreach.sirtimithedev@gmail.com
               </a>
             </li>

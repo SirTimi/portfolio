@@ -1,32 +1,59 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = localFont({
+  src: [{ path: "../public/fonts/InterVariable.ttf", style:"normal" }],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const playfair = localFont({
+  src: [{ path: "../public/fonts/PlayfairDisplayVariable.ttf", style: "normal" }],
+  variable: "--font-inter",
+  display: "swap"
 });
+
+/** UPDATE THIS ONCE and you're set */
+const siteUrl = "https://sirtimithedev.vercel.app"; // e.g., https://sirtimi.dev
+const siteName = "SirTimi — Premium Web & AI Systems";
+const siteDesc = "Premium AI & Web solutions that drive results.";
 
 export const metadata: Metadata = {
-  title: "SirTimitheDev",
-  description: "Premium AI & Web Solutions",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "SirTimi",
+    template: "%s — SirTimi",
+  },
+  description: siteDesc,
+  openGraph: {
+    title: siteName,
+    description: siteDesc,
+    url: siteUrl,
+    siteName,
+    type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: siteDesc,
+    images: ["/og-default.jpg"],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>

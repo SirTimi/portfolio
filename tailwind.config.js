@@ -13,7 +13,8 @@ module.exports = {
         darkgray: '#1A1A1A',
       },
       fontFamily: {
-        sans: ['Montserrat', 'Inter', 'sans-serif'],
+        body: ["var(--font-inter"],
+        display: ["var(--font-playfair"],
       },
     },
   },
