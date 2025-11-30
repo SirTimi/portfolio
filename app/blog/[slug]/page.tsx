@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug } from "../../../lib/posts";
 
-const SITE_URL = "https://<your-domain>"; // set your domain
+const SITE_URL = "https://sirtimithedev.vercel.app"; // set your domain
 
 export const dynamicParams = false;
 export const revalidate = 60;
